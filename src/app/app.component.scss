@@ -1,0 +1,11 @@
+// Create mixin button style
+@mixin button_style ($color, $bgColor) {
+    color: $color;
+    background-color: $bgColor;
+    border: 1px solid $bgColor;
+}
+
+button.mat-button {
+    @include button_style(white, black);
+    padding: 1em 2em;
+}
